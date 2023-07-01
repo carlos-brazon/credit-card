@@ -1,10 +1,8 @@
 import React from 'react'
 
 export const Countries = ({ countrie: { country, population } }) => {
-  const numeroPopulation = []
-  for (let i = 0; i < population; i += 10000000) {
-    numeroPopulation.push(<p className='bg-yellow-500 w-px flex'></p>)
-  }
+  
+  const numeroPopulation = Math.round((population/7693165599)*100);
 
   return (
     <div className='flex gap-2'>
@@ -12,8 +10,8 @@ export const Countries = ({ countrie: { country, population } }) => {
         <p className='flex w-48'>
           {country}
         </p>
-        <div className='flex truncate rounded'>
-          {numeroPopulation}
+        <div className='flex truncate rounded w-[800px]'>
+        <p className={`bg-yellow-500 flex`} style={{width:numeroPopulation+'%'}}></p>
         </div>
       </div>
       <p className='w-40 flex'>
