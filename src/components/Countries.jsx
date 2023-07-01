@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Countries = ({ countrie: { country, population } }) => {
   
-  const numeroPopulation = Math.round((population/7693165599)*100);
+  const numeroPopulation = (Math.round((population/7693165599)*100)).toString()+'%'
 
   return (
     <div className='flex gap-2'>
@@ -11,10 +11,10 @@ export const Countries = ({ countrie: { country, population } }) => {
           {country}
         </p>
         <div className='flex truncate rounded w-[800px]'>
-        <p className={`bg-yellow-500 flex`} style={{width:numeroPopulation+'%'}}></p>
+        <p className={`flex rounded bg-gradient-to-r from-orange-300 via-orange-500 to-orange-600`} style={{width: `${numeroPopulation}`}}></p>
         </div>
       </div>
-      <p className='w-40 flex'>
+      <p className='w-36 text-right'>
         {population.toLocaleString().replaceAll('.', ',')}
       </p>
     </div>

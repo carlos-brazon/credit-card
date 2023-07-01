@@ -7,12 +7,11 @@ export const ButtonPokemon = ({ name }) => {
   })
 
   return (
-    <button className='bg-blue-400' onClick={handleClick}>{name}</button>
+    <button className=' bg-slate-400 p-1 rounded' onClick={handleClick}>{name}</button>
   )
 }
 
 export const ButtonsCreated = ({ numero }) => {
-
 
   const esPrimo = numero => {
     if (numero == 0 || numero == 1 || numero == 4) return false;

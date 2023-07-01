@@ -20,5 +20,48 @@ const PokemonsAppi = [
 	{ id: 19, name: 'rattata', img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png' },
 	{ id: 20, name: 'raticate', img: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png' }
 ];
+const persons = [
+	{
+	  cssClass: '',
+	  type: 'master',
+	  number: (Math.floor(Math.random() * (10 ** 16 - 10 ** 15 + 1) + 10 ** 15)).toString(),
+	  expirationMonth: Math.ceil(Math.random() * 12),
+	  expirationYear: (new Date().getFullYear() + 5).toString().slice(2),
+	  bank: 'BBVA',
+	  owner: 'CARLOS BRAZON'
+	},
+	{
+	  cssClass: 'gold',
+	  type: 'master',
+	  number: (Math.floor(Math.random() * (10 ** 16 - 10 ** 15 + 1) + 10 ** 15)).toString(),
+	  expirationMonth: Math.ceil(Math.random() * 12),
+	  expirationYear: (new Date().getFullYear() + 5).toString().slice(2),
+	  bank: 'ING',
+	  owner: 'CARLOS MANUEL'
+	},
+	{
+	  cssClass: 'aliceblue',
+	  type: 'visa',
+	  number: (Math.floor(Math.random() * (10 ** 16 - 10 ** 15 + 1) + 10 ** 15)).toString(),
+	  expirationMonth: Math.ceil(Math.random() * 12),
+	  expirationYear: (new Date().getFullYear() + 5).toString().slice(2),
+	  bank: 'CAIXA',
+	  owner: 'CARLOS DIAZ'
+	}
+  ]
+  const countries = [
+	{ country: 'World', population: 7693165599 },
+	{ country: 'China', population: 1377422166 },
+	{ country: 'India', population: 1295210000 },
+	{ country: 'United States of America', population: 323947000 },
+	{ country: 'Indonesia', population: 258705000 },
+	{ country: 'Brazil', population: 206135893 },
+	{ country: 'Pakistan', population: 194125062 },
+	{ country: 'Nigeria', population: 186988000 },
+	{ country: 'Bangladesh', population: 161006790 },
+	{ country: 'Russian Federation', population: 146599183 },
+	{ country: 'Japan', population: 126960000 },
+	{ country: 'Spain', population: 48196693 },
+  ]
 
-export { PokemonsAppi }
+export { PokemonsAppi, persons, countries }
